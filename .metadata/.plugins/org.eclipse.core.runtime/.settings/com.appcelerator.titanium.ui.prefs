@@ -1,11 +1,13 @@
 =run
+1503AboutMe_DiGirolamo_edward\:launchMode=run
+1503AboutMe_DiGirolamo_edward\:launchShortcut=com.appcelerator.titanium.mobile.ui.ios.simulator.ipad.launchShortcut.727F1FEA-EE6E-482B-A3A1-33CD717866EF
 1503AppInfo_DiGirolamo_Edward\:launchMode=run
 1503AppInfo_DiGirolamo_Edward\:launchShortcut=com.appcelerator.titanium.mobile.ui.ios.simulator.ipad.launchShortcut.727F1FEA-EE6E-482B-A3A1-33CD717866EF
 1503_AboutMe_Digirolamo_Edward\:launchMode=run
 1503_AboutMe_Digirolamo_Edward\:launchShortcut=com.appcelerator.titanium.mobile.ui.ios.simulator.ipad.launchShortcut.727F1FEA-EE6E-482B-A3A1-33CD717866EF
 1503_InfoApp_DiGirolamo_Edward\:launchMode=run
 1503_InfoApp_DiGirolamo_Edward\:launchShortcut=com.appcelerator.titanium.mobile.ui.ios.simulator.ipad.launchShortcut.727F1FEA-EE6E-482B-A3A1-33CD717866EF
-LAST_LAUNCH_TIMESTAMP=1426558336053
+LAST_LAUNCH_TIMESTAMP=1426558802307
 eclipse.preferences.version=1
 preference.show.console.onError=true
 preference.studio.perspective.version=103

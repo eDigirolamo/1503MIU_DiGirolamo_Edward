@@ -1,46 +1,74 @@
+// this sets the background color of the master UIView (when there are no windows/tab groups on it)
+Titanium.UI.setBackgroundColor('#000');
 
 var myData = require("JSON");
-var phones = myData.devices.phones;
-
+var basic = myData.myData.basic;
+var additional = myData.myData.additional;
+// windows
 var mainWin = Ti.UI.createWindow({
-	title: "Googles Nexus Line"
+		title: "About Me",
 });
+
 
 var navWin = Ti.UI.iOS.createNavigationWindow({
-	window: mainWin
+	window: mainWin,
 });
 
-var search = Titanium.UI.createSearchBar({
-    barColor:'#000', 
-    showCancel:true,
-    height:43,
-    bottom:0,
-});
-
-var myTable = Ti.UI.createTableView({
-	
-});
-
-var phoneSection = Ti.UI.createTableViewSection({
-	headerTitle: "Current phone"	
+// table
+var aboutMeTable = Ti.UI.createTableView({
+			backgroundColor: "#2979FF"
 
 });
 
-var tableData = [phoneSection];
+// table sections
+var basicQuestions = Ti.UI.createTableViewSection({
 
-for (n in phones){
-	
-	var myRow = Ti.UI.createTableViewRow({
-		backgroundColor:"#fff",
-		color: "#000",
-		title: phones[n].name,
-		hasChild: true
-		});
+headerTitle: "Basic Questions"	
+});
+
+var additionalQuestions = Ti.UI.createTableViewSection({
+	headerTitle: "Additional Questions"	
+
+});
+
+
+// groups sections together to simplify adding data to table
+var questions = [basicQuestions, additionalQuestions];
+
+// Loops through basic questions to populate section 1
+for (n in basic){
+
+	var basicRow = Ti.UI.createTableViewRow({
+		backgroundColor: "#fff",
+	    color: "#000",
+		title: basic[n].title,
+		answer: basic[n].answer
+	});
 		
-	phoneSection.add(myRow);
-};
+basicQuestions.add(basicRow);
 
-// main code
-myTable.setData(tableData);
-mainWin.add(myTable, search);
+}
+
+// Loops through additional questions making section 2 populate questions
+for (n in additional){
+	var additionalRow = Ti.UI.createTableViewRow({
+		backgroundColor: "#fff",
+	    color: "#000",
+		title: additional[n].title,
+		answer: additional[n].answer
+	});
+	
+additionalQuestions.add(additionalRow);
+
+}
+
+
+
+aboutMeTable.setData(questions);
+// Event propogation to minimize click listeners and speed up app!
+aboutMeTable.addEventListener("click", function(event){
+
+console.log(event.source.title + " "+ event.source.answer);
+});
+mainWin.add(aboutMeTable);
 navWin.open();
