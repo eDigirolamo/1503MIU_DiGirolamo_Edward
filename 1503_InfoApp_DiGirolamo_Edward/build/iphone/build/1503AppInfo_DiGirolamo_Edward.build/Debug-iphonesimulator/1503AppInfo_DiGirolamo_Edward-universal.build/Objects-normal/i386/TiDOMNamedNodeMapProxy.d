@@ -1,12 +1,12 @@
 dependencies: \
-  /Users/edwarddigirolamo/Desktop/1503MIU_DiGirolamo_Edward/1503AppInfo_DiGirolamo_Edward/build/iphone/Classes/TiDOMNamedNodeMapProxy.m \
-  /Users/edwarddigirolamo/Desktop/1503MIU_DiGirolamo_Edward/1503AppInfo_DiGirolamo_Edward/build/iphone/Classes/TiDOMNamedNodeMapProxy.h \
-  /Users/edwarddigirolamo/Desktop/1503MIU_DiGirolamo_Edward/1503AppInfo_DiGirolamo_Edward/build/iphone/Classes/TiProxy.h \
-  /Users/edwarddigirolamo/Desktop/1503MIU_DiGirolamo_Edward/1503AppInfo_DiGirolamo_Edward/build/iphone/Classes/TiBase.h \
-  /Users/edwarddigirolamo/Desktop/1503MIU_DiGirolamo_Edward/1503AppInfo_DiGirolamo_Edward/build/iphone/Classes/TiThreading.h \
-  /Users/edwarddigirolamo/Desktop/1503MIU_DiGirolamo_Edward/1503AppInfo_DiGirolamo_Edward/build/iphone/Classes/TiPublicAPI.h \
-  /Users/edwarddigirolamo/Desktop/1503MIU_DiGirolamo_Edward/1503AppInfo_DiGirolamo_Edward/build/iphone/Classes/TiEvaluator.h \
-  /Users/edwarddigirolamo/Desktop/1503MIU_DiGirolamo_Edward/1503AppInfo_DiGirolamo_Edward/build/iphone/Classes/KrollContext.h \
+  /Users/edwarddigirolamo/Desktop/1503MIU_DiGirolamo_Edward/1503_InfoApp_DiGirolamo_Edward/build/iphone/Classes/TiDOMNamedNodeMapProxy.m \
+  /Users/edwarddigirolamo/Desktop/1503MIU_DiGirolamo_Edward/1503_InfoApp_DiGirolamo_Edward/build/iphone/Classes/TiDOMNamedNodeMapProxy.h \
+  /Users/edwarddigirolamo/Desktop/1503MIU_DiGirolamo_Edward/1503_InfoApp_DiGirolamo_Edward/build/iphone/Classes/TiProxy.h \
+  /Users/edwarddigirolamo/Desktop/1503MIU_DiGirolamo_Edward/1503_InfoApp_DiGirolamo_Edward/build/iphone/Classes/TiBase.h \
+  /Users/edwarddigirolamo/Desktop/1503MIU_DiGirolamo_Edward/1503_InfoApp_DiGirolamo_Edward/build/iphone/Classes/TiThreading.h \
+  /Users/edwarddigirolamo/Desktop/1503MIU_DiGirolamo_Edward/1503_InfoApp_DiGirolamo_Edward/build/iphone/Classes/TiPublicAPI.h \
+  /Users/edwarddigirolamo/Desktop/1503MIU_DiGirolamo_Edward/1503_InfoApp_DiGirolamo_Edward/build/iphone/Classes/TiEvaluator.h \
+  /Users/edwarddigirolamo/Desktop/1503MIU_DiGirolamo_Edward/1503_InfoApp_DiGirolamo_Edward/build/iphone/Classes/KrollContext.h \
   headers/JavaScriptCore/TiCore.h headers/JavaScriptCore/Ti.h \
   headers/JavaScriptCore/TiBase.h headers/JavaScriptCore/TiContextRef.h \
   headers/JavaScriptCore/TiObjectRef.h \
@@ -14,10 +14,10 @@ dependencies: \
   headers/JavaScriptCore/WebKitAvailability.h \
   headers/JavaScriptCore/TiStringRef.h \
   headers/JavaScriptCore/TiStringRefCF.h \
-  /Users/edwarddigirolamo/Desktop/1503MIU_DiGirolamo_Edward/1503AppInfo_DiGirolamo_Edward/build/iphone/Classes/KrollCallback.h \
-  /Users/edwarddigirolamo/Desktop/1503MIU_DiGirolamo_Edward/1503AppInfo_DiGirolamo_Edward/build/iphone/Classes/KrollObject.h \
-  /Users/edwarddigirolamo/Desktop/1503MIU_DiGirolamo_Edward/1503AppInfo_DiGirolamo_Edward/build/iphone/Classes/TiBindingRunLoop.h \
-  /Users/edwarddigirolamo/Desktop/1503MIU_DiGirolamo_Edward/1503AppInfo_DiGirolamo_Edward/build/iphone/Classes/GDataXMLNode.h \
+  /Users/edwarddigirolamo/Desktop/1503MIU_DiGirolamo_Edward/1503_InfoApp_DiGirolamo_Edward/build/iphone/Classes/KrollCallback.h \
+  /Users/edwarddigirolamo/Desktop/1503MIU_DiGirolamo_Edward/1503_InfoApp_DiGirolamo_Edward/build/iphone/Classes/KrollObject.h \
+  /Users/edwarddigirolamo/Desktop/1503MIU_DiGirolamo_Edward/1503_InfoApp_DiGirolamo_Edward/build/iphone/Classes/TiBindingRunLoop.h \
+  /Users/edwarddigirolamo/Desktop/1503MIU_DiGirolamo_Edward/1503_InfoApp_DiGirolamo_Edward/build/iphone/Classes/GDataXMLNode.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator8.2.sdk/usr/include/libxml2/libxml/tree.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator8.2.sdk/usr/include/libxml2/libxml/xmlversion.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator8.2.sdk/usr/include/libxml2/libxml/xmlexports.h \
@@ -41,14 +41,14 @@ dependencies: \
   /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator8.2.sdk/usr/include/libxml2/libxml/SAX2.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator8.2.sdk/usr/include/libxml2/libxml/xpath.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator8.2.sdk/usr/include/libxml2/libxml/xpathInternals.h \
-  /Users/edwarddigirolamo/Desktop/1503MIU_DiGirolamo_Edward/1503AppInfo_DiGirolamo_Edward/build/iphone/Classes/TiDOMElementProxy.h \
-  /Users/edwarddigirolamo/Desktop/1503MIU_DiGirolamo_Edward/1503AppInfo_DiGirolamo_Edward/build/iphone/Classes/TiDOMNodeProxy.h \
-  /Users/edwarddigirolamo/Desktop/1503MIU_DiGirolamo_Edward/1503AppInfo_DiGirolamo_Edward/build/iphone/Classes/TiDOMAttrProxy.h \
-  /Users/edwarddigirolamo/Desktop/1503MIU_DiGirolamo_Edward/1503AppInfo_DiGirolamo_Edward/build/iphone/Classes/TiDOMNodeListProxy.h \
-  /Users/edwarddigirolamo/Desktop/1503MIU_DiGirolamo_Edward/1503AppInfo_DiGirolamo_Edward/build/iphone/Classes/TiUtils.h \
-  /Users/edwarddigirolamo/Desktop/1503MIU_DiGirolamo_Edward/1503AppInfo_DiGirolamo_Edward/build/iphone/Classes/TiDimension.h \
-  /Users/edwarddigirolamo/Desktop/1503MIU_DiGirolamo_Edward/1503AppInfo_DiGirolamo_Edward/build/iphone/Classes/TiColor.h \
-  /Users/edwarddigirolamo/Desktop/1503MIU_DiGirolamo_Edward/1503AppInfo_DiGirolamo_Edward/build/iphone/Classes/WebFont.h \
-  /Users/edwarddigirolamo/Desktop/1503MIU_DiGirolamo_Edward/1503AppInfo_DiGirolamo_Edward/build/iphone/Classes/TiFile.h \
-  /Users/edwarddigirolamo/Desktop/1503MIU_DiGirolamo_Edward/1503AppInfo_DiGirolamo_Edward/build/iphone/Classes/TiBuffer.h \
-  /Users/edwarddigirolamo/Desktop/1503MIU_DiGirolamo_Edward/1503AppInfo_DiGirolamo_Edward/build/iphone/Classes/TiBlob.h
+  /Users/edwarddigirolamo/Desktop/1503MIU_DiGirolamo_Edward/1503_InfoApp_DiGirolamo_Edward/build/iphone/Classes/TiDOMElementProxy.h \
+  /Users/edwarddigirolamo/Desktop/1503MIU_DiGirolamo_Edward/1503_InfoApp_DiGirolamo_Edward/build/iphone/Classes/TiDOMNodeProxy.h \
+  /Users/edwarddigirolamo/Desktop/1503MIU_DiGirolamo_Edward/1503_InfoApp_DiGirolamo_Edward/build/iphone/Classes/TiDOMAttrProxy.h \
+  /Users/edwarddigirolamo/Desktop/1503MIU_DiGirolamo_Edward/1503_InfoApp_DiGirolamo_Edward/build/iphone/Classes/TiDOMNodeListProxy.h \
+  /Users/edwarddigirolamo/Desktop/1503MIU_DiGirolamo_Edward/1503_InfoApp_DiGirolamo_Edward/build/iphone/Classes/TiUtils.h \
+  /Users/edwarddigirolamo/Desktop/1503MIU_DiGirolamo_Edward/1503_InfoApp_DiGirolamo_Edward/build/iphone/Classes/TiDimension.h \
+  /Users/edwarddigirolamo/Desktop/1503MIU_DiGirolamo_Edward/1503_InfoApp_DiGirolamo_Edward/build/iphone/Classes/TiColor.h \
+  /Users/edwarddigirolamo/Desktop/1503MIU_DiGirolamo_Edward/1503_InfoApp_DiGirolamo_Edward/build/iphone/Classes/WebFont.h \
+  /Users/edwarddigirolamo/Desktop/1503MIU_DiGirolamo_Edward/1503_InfoApp_DiGirolamo_Edward/build/iphone/Classes/TiFile.h \
+  /Users/edwarddigirolamo/Desktop/1503MIU_DiGirolamo_Edward/1503_InfoApp_DiGirolamo_Edward/build/iphone/Classes/TiBuffer.h \
+  /Users/edwarddigirolamo/Desktop/1503MIU_DiGirolamo_Edward/1503_InfoApp_DiGirolamo_Edward/build/iphone/Classes/TiBlob.h

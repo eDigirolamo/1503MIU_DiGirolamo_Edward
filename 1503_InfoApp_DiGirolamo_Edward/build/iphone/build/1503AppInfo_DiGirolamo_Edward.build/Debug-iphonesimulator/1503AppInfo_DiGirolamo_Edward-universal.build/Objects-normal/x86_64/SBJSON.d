@@ -1,12 +1,12 @@
 dependencies: \
-  /Users/edwarddigirolamo/Desktop/1503MIU_DiGirolamo_Edward/1503AppInfo_DiGirolamo_Edward/build/iphone/Classes/SBJSON.m \
-  /Users/edwarddigirolamo/Desktop/1503MIU_DiGirolamo_Edward/1503AppInfo_DiGirolamo_Edward/build/iphone/Classes/SBJSON.h \
-  /Users/edwarddigirolamo/Desktop/1503MIU_DiGirolamo_Edward/1503AppInfo_DiGirolamo_Edward/build/iphone/Classes/TiProxy.h \
-  /Users/edwarddigirolamo/Desktop/1503MIU_DiGirolamo_Edward/1503AppInfo_DiGirolamo_Edward/build/iphone/Classes/TiBase.h \
-  /Users/edwarddigirolamo/Desktop/1503MIU_DiGirolamo_Edward/1503AppInfo_DiGirolamo_Edward/build/iphone/Classes/TiThreading.h \
-  /Users/edwarddigirolamo/Desktop/1503MIU_DiGirolamo_Edward/1503AppInfo_DiGirolamo_Edward/build/iphone/Classes/TiPublicAPI.h \
-  /Users/edwarddigirolamo/Desktop/1503MIU_DiGirolamo_Edward/1503AppInfo_DiGirolamo_Edward/build/iphone/Classes/TiEvaluator.h \
-  /Users/edwarddigirolamo/Desktop/1503MIU_DiGirolamo_Edward/1503AppInfo_DiGirolamo_Edward/build/iphone/Classes/KrollContext.h \
+  /Users/edwarddigirolamo/Desktop/1503MIU_DiGirolamo_Edward/1503_InfoApp_DiGirolamo_Edward/build/iphone/Classes/SBJSON.m \
+  /Users/edwarddigirolamo/Desktop/1503MIU_DiGirolamo_Edward/1503_InfoApp_DiGirolamo_Edward/build/iphone/Classes/SBJSON.h \
+  /Users/edwarddigirolamo/Desktop/1503MIU_DiGirolamo_Edward/1503_InfoApp_DiGirolamo_Edward/build/iphone/Classes/TiProxy.h \
+  /Users/edwarddigirolamo/Desktop/1503MIU_DiGirolamo_Edward/1503_InfoApp_DiGirolamo_Edward/build/iphone/Classes/TiBase.h \
+  /Users/edwarddigirolamo/Desktop/1503MIU_DiGirolamo_Edward/1503_InfoApp_DiGirolamo_Edward/build/iphone/Classes/TiThreading.h \
+  /Users/edwarddigirolamo/Desktop/1503MIU_DiGirolamo_Edward/1503_InfoApp_DiGirolamo_Edward/build/iphone/Classes/TiPublicAPI.h \
+  /Users/edwarddigirolamo/Desktop/1503MIU_DiGirolamo_Edward/1503_InfoApp_DiGirolamo_Edward/build/iphone/Classes/TiEvaluator.h \
+  /Users/edwarddigirolamo/Desktop/1503MIU_DiGirolamo_Edward/1503_InfoApp_DiGirolamo_Edward/build/iphone/Classes/KrollContext.h \
   headers/JavaScriptCore/TiCore.h headers/JavaScriptCore/Ti.h \
   headers/JavaScriptCore/TiBase.h headers/JavaScriptCore/TiContextRef.h \
   headers/JavaScriptCore/TiObjectRef.h \
@@ -14,9 +14,9 @@ dependencies: \
   headers/JavaScriptCore/WebKitAvailability.h \
   headers/JavaScriptCore/TiStringRef.h \
   headers/JavaScriptCore/TiStringRefCF.h \
-  /Users/edwarddigirolamo/Desktop/1503MIU_DiGirolamo_Edward/1503AppInfo_DiGirolamo_Edward/build/iphone/Classes/KrollCallback.h \
-  /Users/edwarddigirolamo/Desktop/1503MIU_DiGirolamo_Edward/1503AppInfo_DiGirolamo_Edward/build/iphone/Classes/KrollObject.h \
-  /Users/edwarddigirolamo/Desktop/1503MIU_DiGirolamo_Edward/1503AppInfo_DiGirolamo_Edward/build/iphone/Classes/TiBindingRunLoop.h \
-  /Users/edwarddigirolamo/Desktop/1503MIU_DiGirolamo_Edward/1503AppInfo_DiGirolamo_Edward/build/iphone/Classes/TiHost.h \
-  /Users/edwarddigirolamo/Desktop/1503MIU_DiGirolamo_Edward/1503AppInfo_DiGirolamo_Edward/build/iphone/Classes/Bridge.h \
-  /Users/edwarddigirolamo/Desktop/1503MIU_DiGirolamo_Edward/1503AppInfo_DiGirolamo_Edward/build/iphone/Classes/TiStylesheet.h
+  /Users/edwarddigirolamo/Desktop/1503MIU_DiGirolamo_Edward/1503_InfoApp_DiGirolamo_Edward/build/iphone/Classes/KrollCallback.h \
+  /Users/edwarddigirolamo/Desktop/1503MIU_DiGirolamo_Edward/1503_InfoApp_DiGirolamo_Edward/build/iphone/Classes/KrollObject.h \
+  /Users/edwarddigirolamo/Desktop/1503MIU_DiGirolamo_Edward/1503_InfoApp_DiGirolamo_Edward/build/iphone/Classes/TiBindingRunLoop.h \
+  /Users/edwarddigirolamo/Desktop/1503MIU_DiGirolamo_Edward/1503_InfoApp_DiGirolamo_Edward/build/iphone/Classes/TiHost.h \
+  /Users/edwarddigirolamo/Desktop/1503MIU_DiGirolamo_Edward/1503_InfoApp_DiGirolamo_Edward/build/iphone/Classes/Bridge.h \
+  /Users/edwarddigirolamo/Desktop/1503MIU_DiGirolamo_Edward/1503_InfoApp_DiGirolamo_Edward/build/iphone/Classes/TiStylesheet.h
