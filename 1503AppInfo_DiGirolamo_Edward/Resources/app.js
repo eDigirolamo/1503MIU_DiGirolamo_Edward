@@ -1,4 +1,4 @@
-Titanium.UI.setBackgroundColor('#000');
+Titanium.UI.setBackgroundColor('#fff');
 
 var deviceData = require("JSON");
 var phones = deviceData.deviceData.phones;
@@ -15,12 +15,12 @@ var size = (availableWidth / rowCount);
 
 // windows
 var mainWin = Ti.UI.createWindow({
-		title: "The Nexus line",
+		title: "Nexus Devices",
 });
 
 
 var galleryContainer = Ti.UI.createScrollView({
-	backgroundColor: "#fff",
+	backgroundColor: "#E0E0E0",
 	layout: "horizontal",
 
 	width: pWidth,
@@ -28,12 +28,43 @@ var galleryContainer = Ti.UI.createScrollView({
 });
 
 var navWin = Ti.UI.iOS.createNavigationWindow({
-	window: mainWin
+	window: mainWin,
+	backgroundColor: "#BDBDBD"
+});
+
+var nexusSite = Ti.UI.createLabel({
+		backgroundColor:"#00BCD4",
+		text: "Check em out!",
+		color: "#fff",
+		top: margin * 2,
+		bottom: margin,
+		height: 45,
+		left: margin,
+		right: margin,
+		textAlign: "center"
+	});
+
+var webview = Titanium.UI.createWebView({
+    url:'http://www.google.com/nexus/'
 });
 
 
 
+var backBtn = Titanium.UI.createButton({
+title:"Back",
+top: 45,
+left : 9
+});
 
+nexusSite.addEventListener("click", function(){
+	navWin.add(webview,backBtn);
+});
+navWin.leftNavButton = backBtn;
+backBtn.addEventListener('click', function(){
+    navWin.remove(webview);
+        navWin.remove(backBtn);
+
+});
 
 for(n in phones){
 			var view = Ti.UI.createImageView({
@@ -64,7 +95,7 @@ for(n in phones){
 			
 			galleryContainer.add(view);
 }
-
+ galleryContainer.add(nexusSite);
 
 
 var infoPane = function(name,date, manufacturer, cpu, ram, storage, screenSize,camera, codename, osVersion, newFeature, deviceImage ){
@@ -72,6 +103,7 @@ var infoPane = function(name,date, manufacturer, cpu, ram, storage, screenSize,c
 	var detailWin = Ti.UI.createWindow({
 		backgroundColor:"#fff",
 		title: name
+		
 	
 		
 	});
@@ -83,52 +115,73 @@ var infoPane = function(name,date, manufacturer, cpu, ram, storage, screenSize,c
 	});
 
 	var relLable =Ti.UI.createLabel({
+		backgroundColor: "#EEEEEE",
+		borderRadius: 6,		
 		text:"Release Date : " + date,
 		top: phoneImage.top + phoneImage.height + 15
 	});
 	var manLable =Ti.UI.createLabel({
+		backgroundColor: "#EEEEEE",
+		borderRadius: 6,
 		text:"Manufacturer: " + manufacturer,
 		top: relLable.top + 35
 	});
 	var cpuLabel = Ti.UI.createLabel({
+		backgroundColor: "#EEEEEE",
+		borderRadius: 6,
 		text:"CPU: " + cpu,
 		top: manLable.top + 25
 	});
 	
 	var ramLabel = Ti.UI.createLabel({
+		backgroundColor: "#EEEEEE",
+		borderRadius: 6,
 		text:"Ram: " + ram,
 		top: cpuLabel.top + 25
 	});
 	
 	var storageLabel = Ti.UI.createLabel({
+		backgroundColor: "#EEEEEE",
+		borderRadius: 6,
 		text:"Storage: " + storage,
 		top: ramLabel.top + 25
 	});
 	
 	var screenSizeLabel = Ti.UI.createLabel({
+		backgroundColor: "#EEEEEE",
+		borderRadius: 6,
 		text:"Screen Size: " + screenSize,
 		top: storageLabel.top + 25
 	});
 	
 	var camLabel= Ti.UI.createLabel({
+		backgroundColor: "#EEEEEE",
+		borderRadius: 6,
 		text:"Camera: " + camera,
 		top: screenSizeLabel.top + 25
 	});
 	
 	var codenameLabel =Ti.UI.createLabel({
+		backgroundColor: "#EEEEEE",
+		borderRadius: 6,
 		text:"Codename: " + codename,
 		top: camLabel.top + 25
 	});
 	
 	var osVeriosnLabel = Ti.UI.createLabel({
+		backgroundColor: "#EEEEEE",
+		borderRadius: 6,
 		text:"Android Version: " + osVersion,
 		top: codenameLabel.top + 45
 	});
 	
 	var newFeatureLabel = Ti.UI.createLabel({
+		backgroundColor: "#EEEEEE",
+		borderRadius: 6,
 		text:"New Feature: " + newFeature,
 		top: osVeriosnLabel.top + 25
 	});
+	
 	
 	
 	detailWin.add(phoneImage, relLable, manLable, cpuLabel,ramLabel,storageLabel,screenSizeLabel,camLabel,codenameLabel,osVeriosnLabel,newFeatureLabel);
@@ -159,6 +212,8 @@ galleryContainer.addEventListener("click", function(event){
 	
 
 	console.log(event.source);
+	
+	//be sure that clicking anywhere does no launch a window with all my data being undefined
 	if (event.source.name != undefined ){
 	infoPane(name, date, manufacturer,cpu,ram,storage,screenSize,camera,codename,osVersion,newFeature, deviceImage);
 	}	
