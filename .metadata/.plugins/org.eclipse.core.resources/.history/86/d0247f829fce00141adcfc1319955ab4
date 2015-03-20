@@ -1,0 +1,18 @@
+var deviceData = {
+	
+	"phones": [
+	
+	{"name": "Nexus One","release":"12/16/2010", "manufacturer": "HTC", "cpu":"1 GHZ", "ram":"512 MB","storage":" 512 MB (with micro SD slot)","screenSize":"3.7 Inch","camera":"5 megapixel", "codename":"Passion", "osVersion":"2.1 Eclair", "newFeature":"None", "imageName":"nexusOne.jpg"},	
+	{"name": "Nexus S","release": "12/16/2010", "manufacturer": "Samsung", "cpu":"", "ram":"","storage":"","screenSize":"","camera":"5 megapixel", "codename":"", "osVersion":"", "newFeature":"", "imageName":""},	
+	{"name": "Galaxy Nexus","release": "12/16/2010", "manufacturer": "Samsung", "cpu":"", "ram":"","storage":"","screenSize":"","camera":"", "codename":"", "osVersion":"", "newFeature":"", "imageName":""},	
+	{"name": "Nexus 4", "release": "12/16/2010","manufacturer": "", "cpu":"LGE", "ram":"","storage":"","screenSize":"","camera":"", "codename":"Hammerhead", "osVersion":"", "newFeature":"", "imageName":"nexus4.png"},	
+	{"name": "Nexus 5","release": "12/16/2010", "manufacturer": "", "cpu":"LGE", "ram":"","storage":"","screenSize":"","camera":"", "codename":"", "osVersion":"", "newFeature":"", "imageName":"nexus5.jpg"},	
+	{"name": "Nexus 6","release": "12/16/2010", "manufacturer": "", "cpu":"Motorola", "ram":"","storage":"","screenSize":"","camera":"", "codename":"", "osVersion":"", "newFeature":"", "imageName":"nexus6.jpeg"},	
+
+	
+	
+	],
+	
+};
+
+exports.deviceData = deviceData;

@@ -1,0 +1,17 @@
+var deviceData = {
+	
+	"phones": [
+	{"name": "Nexus One", "manufacturer": "HTC", "cpu":"", "ram":"","storage":"","screenSize":"camera", "codename":"", "osVersion":"", "newFeature":"", "image":"nexusone.jpg"},	
+	{"name": "Nexus S", "manufacturer": "Samsung", "cpu":"", "ram":"","storage":"","screenSize":"camera", "codename":"", "osVersion":"", "newFeature":"", "image":""},	
+	{"name": "Galaxy Nexus", "manufacturer": "Samsung", "cpu":"", "ram":"","storage":"","screenSize":"camera", "codename":"", "osVersion":"", "newFeature":"", "image":""},	
+	{"name": "Nexus 4", "manufacturer": "", "cpu":"LGE", "ram":"","storage":"","screenSize":"camera", "codename":"Hammerhead", "osVersion":"", "newFeature":"", "image":"nexus4.png"},	
+	{"name": "Nexus 5", "manufacturer": "", "cpu":"LGE", "ram":"","storage":"","screenSize":"camera", "codename":"", "osVersion":"", "newFeature":"", "image":"nexus5.jpg"},	
+	{"name": "Nexus 6", "manufacturer": "", "cpu":"Motorola", "ram":"","storage":"","screenSize":"camera", "codename":"", "osVersion":"", "newFeature":"", "image":"nexus6.jpeg"},	
+
+	
+	
+	],
+	
+};
+
+exports.deviceData = deviceData;

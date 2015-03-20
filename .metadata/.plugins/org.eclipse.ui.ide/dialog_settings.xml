@@ -22,6 +22,14 @@
 	<section name="NewWizardAction">
 		<item value="com.appcelerator.titanium.mobile.project_wizard" key="NewWizardSelectionPage.STORE_SELECTED_ID"/>
 		<list key="NewWizardSelectionPage.STORE_EXPANDED_CATEGORIES_ID">
+			<item value="com.appcelerator.titanium.new.wizard.category"/>
 		</list>
+	</section>
+	<section name="CleanDialogSettings">
+		<item value="484" key="DIALOG_WIDTH"/>
+		<item value="204" key="DIALOG_Y_ORIGIN"/>
+		<item value="379" key="DIALOG_X_ORIGIN"/>
+		<item value="354" key="DIALOG_HEIGHT"/>
+		<item value="false" key="TOGGLE_SELECTED"/>
 	</section>
 </section>

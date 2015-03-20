@@ -1,74 +1,165 @@
-// this sets the background color of the master UIView (when there are no windows/tab groups on it)
 Titanium.UI.setBackgroundColor('#000');
 
-var myData = require("JSON");
-var basic = myData.myData.basic;
-var additional = myData.myData.additional;
+var deviceData = require("JSON");
+var phones = deviceData.deviceData.phones;
+
+var pWidth = Ti.Platform.displayCaps.platformWidth;
+var pHeight = Ti.Platform.displayCaps.platformHeight;
+var margin = 10;
+
+var deviceCount = phones.length;
+var rowCount = 3;
+
+var availableWidth = pWidth - (margin * 4);
+var size = (availableWidth / rowCount);
+
 // windows
 var mainWin = Ti.UI.createWindow({
-		title: "About Me",
+		title: "The Nexus line",
 });
 
+
+var galleryContainer = Ti.UI.createScrollView({
+	backgroundColor: "#fff",
+	layout: "horizontal",
+
+	width: pWidth,
+	contentWidth: pWidth,
+});
 
 var navWin = Ti.UI.iOS.createNavigationWindow({
-	window: mainWin,
-});
-
-// table
-var aboutMeTable = Ti.UI.createTableView({
-			backgroundColor: "#2979FF"
-
-});
-
-// table sections
-var basicQuestions = Ti.UI.createTableViewSection({
-
-headerTitle: "Basic Questions"	
-});
-
-var additionalQuestions = Ti.UI.createTableViewSection({
-	headerTitle: "Additional Questions"	
-
+	window: mainWin
 });
 
 
-// groups sections together to simplify adding data to table
-var questions = [basicQuestions, additionalQuestions];
 
-// Loops through basic questions to populate section 1
-for (n in basic){
 
-	var basicRow = Ti.UI.createTableViewRow({
-		backgroundColor: "#fff",
-	    color: "#000",
-		title: basic[n].title,
-		answer: basic[n].answer
-	});
-		
-basicQuestions.add(basicRow);
 
+for(n in phones){
+			var view = Ti.UI.createImageView({
+				backgroundColor: "#fff",
+				image: "images/" + phones[n].imageName,
+				
+				// data to gather for passing into my function later
+				name: phones[n].name,
+				date: phones[n].date,
+				manufacturer: phones[n].manufacturer,
+				cpu: phones[n].cpu,
+				ram: phones[n].ram,
+				storage: phones[n].storage, 
+				screenSize: phones[n].screenSize,
+				camera:  phones[n].camera, 
+				codename: phones[n].codename, 
+				osVersion: phones[n].osVersion, 
+				newFeature: phones[n].newFeature,
+				imageName: phones[n].imageName,
+				
+				top: margin,
+				left: margin,
+				width: size,
+				height: size,
+				borderRadius: 3	
+			});
+			
+			
+			galleryContainer.add(view);
 }
 
-// Loops through additional questions making section 2 populate questions
-for (n in additional){
-	var additionalRow = Ti.UI.createTableViewRow({
-		backgroundColor: "#fff",
-	    color: "#000",
-		title: additional[n].title,
-		answer: additional[n].answer
+
+
+var infoPane = function(name,date, manufacturer, cpu, ram, storage, screenSize,camera, codename, osVersion, newFeature, deviceImage ){
+
+	var detailWin = Ti.UI.createWindow({
+		backgroundColor:"#fff",
+		title: name
+	
+		
 	});
 	
-additionalQuestions.add(additionalRow);
+	var phoneImage = Ti.UI.createImageView({
+		image: "images/" + deviceImage,
+		top: 15,
+		height: 175
+	});
 
-}
+	var relLable =Ti.UI.createLabel({
+		text:"Release Date : " + date,
+		top: phoneImage.top + phoneImage.height + 15
+	});
+	var manLable =Ti.UI.createLabel({
+		text:"Manufacturer: " + manufacturer,
+		top: relLable.top + 35
+	});
+	var cpuLabel = Ti.UI.createLabel({
+		text:"CPU: " + cpu,
+		top: manLable.top + 25
+	});
+	
+	var ramLabel = Ti.UI.createLabel({
+		text:"Ram: " + ram,
+		top: cpuLabel.top + 25
+	});
+	
+	var storageLabel = Ti.UI.createLabel({
+		text:"Storage: " + storage,
+		top: ramLabel.top + 25
+	});
+	
+	var screenSizeLabel = Ti.UI.createLabel({
+		text:"Screen Size: " + screenSize,
+		top: storageLabel.top + 25
+	});
+	
+	var camLabel= Ti.UI.createLabel({
+		text:"Camera: " + camera,
+		top: screenSizeLabel.top + 25
+	});
+	
+	var codenameLabel =Ti.UI.createLabel({
+		text:"Codename: " + codename,
+		top: camLabel.top + 25
+	});
+	
+	var osVeriosnLabel = Ti.UI.createLabel({
+		text:"Android Version: " + osVersion,
+		top: codenameLabel.top + 45
+	});
+	
+	var newFeatureLabel = Ti.UI.createLabel({
+		text:"New Feature: " + newFeature,
+		top: osVeriosnLabel.top + 25
+	});
+	
+	
+	detailWin.add(phoneImage, relLable, manLable, cpuLabel,ramLabel,storageLabel,screenSizeLabel,camLabel,codenameLabel,osVeriosnLabel,newFeatureLabel);
+	
+	navWin.openWindow(detailWin);
+
+};
 
 
-
-aboutMeTable.setData(questions);
-// Event propogation to minimize click listeners and speed up app!
-aboutMeTable.addEventListener("click", function(event){
-
-console.log(event.source.title + " "+ event.source.answer);
-});
-mainWin.add(aboutMeTable);
+			
+mainWin.add(galleryContainer);
 navWin.open();
+
+galleryContainer.addEventListener("click", function(event){
+	
+	var name = event.source.name;
+	var date = event.source.date;
+	var manufacturer = event.source.manufacturer;
+	var cpu = event.source.cpu;
+	var ram = event.source.ram;
+	var storage = event.source.storage;
+	var screenSize = event.source.screenSize;
+	var camera = event.source.camera;
+	var codename = event.source.codename;
+	var osVersion = event.source.osVersion;
+	var newFeature = event.source.newFeature;
+	var deviceImage = event.source.imageName;
+	
+
+	console.log(event.source);
+	if (event.source.name != undefined ){
+	infoPane(name, date, manufacturer,cpu,ram,storage,screenSize,camera,codename,osVersion,newFeature, deviceImage);
+	}	
+});
