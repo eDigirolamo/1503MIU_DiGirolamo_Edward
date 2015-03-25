@@ -1,3 +1,3 @@
-FIND_BAR_DECORATOR_FIND_ENTRIES=\#\n\#Thu Mar 19 18\:36\:02 EDT 2015\n2\=screen size\n1\=os version\n0\=new feature\n
-FIND_BAR_DECORATOR_REPLACE_ENTRIES=\#\n\#Thu Mar 19 18\:36\:02 EDT 2015\n2\=screenSize\n1\=osVersion\n0\=newFeature\n
+FIND_BAR_DECORATOR_FIND_ENTRIES=\#\n\#Thu Mar 19 21\:21\:42 EDT 2015\n3\=screen size\n2\=os version\n1\=new feature\n0\=release\n
+FIND_BAR_DECORATOR_REPLACE_ENTRIES=\#\n\#Thu Mar 19 21\:21\:42 EDT 2015\n3\=screenSize\n2\=osVersion\n1\=newFeature\n0\=date\n
 eclipse.preferences.version=1
