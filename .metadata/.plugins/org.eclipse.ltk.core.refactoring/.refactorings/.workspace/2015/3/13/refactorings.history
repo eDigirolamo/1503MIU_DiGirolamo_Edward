@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Delete resource &apos;1503_UtilityApp_Digirolamo_Edward/Resources/images/mustaches/logo.jpg&apos;" deleteContents="false" description="Delete resource &apos;1503_UtilityApp_Digirolamo_Edward/Resources/images/mustaches/logo.jpg&apos;" element1="/1503_UtilityApp_Digirolamo_Edward/Resources/images/mustaches/logo.jpg" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1427416600434"/>
+</session>

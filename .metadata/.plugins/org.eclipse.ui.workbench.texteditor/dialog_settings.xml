@@ -2,11 +2,14 @@
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="true" key="wrap"/>
-		<item value="false" key="casesensitive"/>
 		<item value="false" key="isRegEx"/>
+		<item value="false" key="casesensitive"/>
 		<item value="false" key="wholeword"/>
-		<item value="release" key="selection"/>
+		<item value="function" key="selection"/>
 		<list key="findhistory">
+			<item value="function"/>
+			<item value="var deviceData = require(&quot;JSON&quot;);&#x0A;"/>
+			<item value="image"/>
 			<item value="release"/>
 			<item value="new feature"/>
 			<item value="os version"/>

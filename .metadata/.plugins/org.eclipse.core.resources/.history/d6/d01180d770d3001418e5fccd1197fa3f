@@ -1,0 +1,382 @@
+// this sets the background color of the master UIView (when there are no windows/tab groups on it)
+Titanium.UI.setBackgroundColor("#fff");
+var userData = require("JSON");
+
+
+// variables
+var margin = 15;
+
+
+// windows
+var mainWin = Ti.UI.createWindow({
+	title: "Upper Lipholstry",
+	backgroundColor: "#E0E0E0"
+});
+var logInWin = Ti.UI.createWindow({
+	backgroundColor: "#757575",
+	title: "Login"
+	
+});
+var signUpWin = Ti.UI.createWindow({
+	backgroundColor: "#757575",
+	title: "Sign up"
+});
+
+var navWin = Ti.UI.iOS.createNavigationWindow({
+	window: mainWin
+});
+
+// Labels
+
+var logInLabel = Ti.UI.createLabel({
+	backgroundColor: "#fff",
+	top: margin/2,
+	left: margin * 2,
+	right: margin * 2,
+	height: 235,
+	borderRadius: 7,
+
+});
+
+var logInFormLabel = Ti.UI.createLabel({
+	backgroundColor: "#fff",
+	top: logInLabel.top + logInLabel.height + margin,
+	left: margin /3,
+	right: margin/3,
+	height: 225,
+	borderRadius: 5,
+
+});
+
+var signUpLabel = Ti.UI.createLabel({
+	backgroundColor: "#fff",
+	top: margin/2,
+	left: margin * 2,
+	right: margin * 2,
+	height: 215,
+	borderRadius: 7,
+
+});
+
+var signUpFormLabel = Ti.UI.createLabel({
+	backgroundColor: "#fff",
+	color: "#000",
+	top: signUpLabel.top + signUpLabel.height + margin +5,
+	left: margin /3,
+	right: margin/3,
+	height: 250,
+	borderRadius: 5
+	
+});
+
+var logoLabel = Ti.UI.createLabel({
+	backgroundColor:"#fff",
+	title: "logo",
+	top: 25,
+	height: 295,
+	borderRadius: 7 
+});
+
+
+
+// textfields
+var userName = Ti.UI.createTextField({
+	backgroundColor: 'white',
+	borderStyle : Titanium.UI.INPUT_BORDERSTYLE_ROUNDED,
+    hintText : "Username",
+    top :logInFormLabel.top + margin +10,
+    left: margin *2,
+    width : 175,
+    height : 35,
+    clearButtonMode: Titanium.UI.INPUT_BUTTONMODE_ONFOCUS
+
+});
+
+var userFirstName = Ti.UI.createTextField({
+	backgroundColor: 'white',
+	borderStyle : Titanium.UI.INPUT_BORDERSTYLE_ROUNDED,
+    hintText : "First Name",
+    top: signUpFormLabel.top + 20,
+    left : margin*2,
+	right: margin * 2,
+    width : 175,
+    height : 35,
+    clearButtonMode: Titanium.UI.INPUT_BUTTONMODE_ONFOCUS
+
+});
+
+var userLastName = Ti.UI.createTextField({
+	backgroundColor: 'white',
+	borderStyle : Titanium.UI.INPUT_BORDERSTYLE_ROUNDED,
+    hintText : "Last Name", 
+    top : userFirstName.top + userFirstName.height + margin/2,
+    left: margin *2,
+	right: margin*2,   
+	height : 35,
+	clearButtonMode: Titanium.UI.INPUT_BUTTONMODE_ONFOCUS
+
+});
+
+
+var newUserPass = Ti.UI.createTextField({
+	borderStyle : Titanium.UI.INPUT_BORDERSTYLE_ROUNDED,
+	passwordMask: true,
+ 	hintText : "Password",
+ 	top: userLastName.top + userLastName.height+ margin ,
+   	left : margin*2,
+	right: margin * 2,
+    height : 35,
+    clearButtonMode: Titanium.UI.INPUT_BUTTONMODE_ONFOCUS
+
+
+ 	
+
+	
+});
+
+var userPass = Ti.UI.createTextField({
+	borderStyle : Titanium.UI.INPUT_BORDERSTYLE_ROUNDED,
+	passwordMask: true,
+ 	hintText : "Password",
+ 	top: userName.top + userName.height+ margin,
+    left: margin* 2,
+    right: margin *2,
+    height : 35,
+    clearButtonMode: Titanium.UI.INPUT_BUTTONMODE_ONFOCUS
+
+
+ 	
+
+	
+});
+
+var userEmail = Ti.UI.createTextField({
+	borderStyle : Titanium.UI.INPUT_BORDERSTYLE_ROUNDED,
+	hintText : "Email",
+ 	top: newUserPass.top + newUserPass.height+ margin/2,
+ 	left : margin*2,
+	right: margin * 2,
+    height : 35,
+    clearButtonMode: Titanium.UI.INPUT_BUTTONMODE_ONFOCUS
+
+
+	
+});
+
+// buttons
+
+
+var logIn = Ti.UI.createButton({
+	backgroundColor: "#00796B",
+	title: "Login",
+	color: "#fff",
+	borderRadius: 5,
+	height: 35,
+	left : margin*2,
+	right: margin * 2,
+	top: userPass.top+ userPass.height+ margin 
+});
+
+var googleButton = Ti.UI.createButton({
+	backgroundColor: "red",
+	title: "Login with Google",
+	color: "#fff",
+	borderRadius: 5,
+	height: 35,
+	left : margin * 2,
+	right: margin* 2,
+	top: logIn.top+ logIn.height + 10 
+	
+	
+});
+
+
+
+
+var signUp = Ti.UI.createButton({
+	backgroundColor: "#0277BD",
+	title: "Sign up",
+	color: "#fff",
+	borderRadius: 5,
+	height: 35,
+	width: 100,
+	top:userEmail.top + userEmail.height +  margin
+	
+});
+
+// intital buttons
+var logButton = Ti.UI.createButton({
+	backgroundColor:"#00796B",
+	color: "#fff",
+	title: "Login",
+	top:355,
+	left: margin * 3,
+	right: margin *3,
+	height:35,
+	borderRadius: 5
+	});
+
+var signButton = Ti.UI.createButton({
+	backgroundColor:"#0277BD",
+	color: "#fff",
+	title: "Join",
+	top: logButton.top + logButton.height+ margin,
+	height: 35,
+	left: margin * 3,
+	right: margin *3,
+	borderRadius: 5
+	
+});
+
+//imageviews
+
+var logo = Ti.UI.createImageView({
+	title: "logo",
+	image:"images/" + "logo.jpg",
+	top: margin,
+	height: 295
+});
+
+var goat = Ti.UI.createImageView({
+	title: "goat",
+	image:"images/" + "goat.png",
+	top: margin,
+	height: 235
+});
+
+var someday = Ti.UI.createImageView({
+	title: "someday",
+	image:"images/" + "someday.jpeg",
+	top: margin,
+	height: 235
+});
+// Misc Inerterface elements
+
+
+
+// functions
+
+
+var logInFunction = function(){
+	
+for(n in userData.userData.users){
+	 
+	var sucess;
+	if(userName.value == userData.userData.users[n].userName && userPass.value == userData.userData.users[n].password ){
+		
+		
+		var successDialog = Ti.UI.createAlertDialog({
+	    message: "Congratulations",
+	    ok: 'show me the staches',
+	    title: 'YAY'
+  		});
+  		 success = true;
+  		
+	}else{
+			var failDialog = Ti.UI.createAlertDialog({
+	    message: "Failed attempt",
+	    ok: 'try again',
+	    title: 'Oops'
+  		});
+  		
+  		success = false;
+		
+	}
+}
+if(success == true){
+  		
+  successDialog.show();
+	}else {
+  failDialog.show();
+	}
+
+	
+};
+
+var signUpFunction = function(){
+	
+var newUser = {
+	email:userEmail.value,
+	firstName: userFirstName.value,
+	lastName: userLastName.value,
+	password: newUserPass.value,
+	userName:"Name" };
+	
+	
+	
+	var successDialog = Ti.UI.createAlertDialog({
+	    message: newUser.firstName+  "Please select a username",
+	    style: Ti.UI.iPhone.AlertDialogStyle.PLAIN_TEXT_INPUT,
+		ok: 'Submit',
+	    title: 'YAY'
+  		});
+		successDialog.show();  	
+
+		
+	successDialog.addEventListener("click", function(e){
+	newUser.userName = e.text;
+	userData.userData.users.push(newUser);
+	console.log(userData.userData.users);
+	
+	navWin.closeWindow(signUpWin);
+	userFirstName.value = null;
+	userLastName.value = null;
+	userPass.value = null;
+	userEmail.value = null;
+
+	});
+	
+};
+
+
+
+
+
+
+logoLabel.add(logo);
+mainWin.add(logoLabel,logButton, signButton);
+
+
+mainWin.addEventListener("click", function(event){
+
+console.log(event.source.title);
+	if(event.source.title == "Login"){
+		navWin.openWindow(logInWin);
+	}else if(event.source.title == "Join"){
+		navWin.openWindow(signUpWin);
+		
+	}else if(event.source.title == "logo"){	
+	
+	var logoDialog = Ti.UI.createAlertDialog({
+	    message: "Hands off the crumb catcher, Grow your own!",
+	    ok: 'My Apologies',
+	    title: 'Excuse me!'
+  		});
+  logoDialog.show();
+	
+
+
+	}else{
+		var dialog = Ti.UI.createAlertDialog({
+	    message: 'Please select a button',
+	    ok: 'Okay',
+	    title: 'Log in'
+  		});
+  dialog.show();
+	}
+});
+
+logInLabel.add(goat);
+logInWin.add(logInLabel, logInFormLabel, userName, userPass, logIn, googleButton);
+
+signUpLabel.add(someday);
+signUpWin.add(signUpLabel, signUpFormLabel,userFirstName,userLastName,newUserPass, userEmail, signUp);
+
+
+logIn.addEventListener("click", logInFunction);
+
+signUp.addEventListener("click", signUpFunction);
+
+
+// main code begin
+navWin.open();

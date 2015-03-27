@@ -1,0 +1,25 @@
+var userData = {
+	
+	"users": [
+	
+	{userName:"dexter8244", firstName: "Edward", lastName: "DiGirolamo", password: "123edd", email: "", stache:"" },	
+	
+
+	
+	
+	],
+	"mustaches": [
+	{name: "abrakadabra", imageName: "abrakadabra.jpg"},
+	{name: "after8", imageName: "after8.jpg"},
+	{name: "blindjack", imageName: "blindjack.jpg"},
+	{name: "butler", imageName: "butler.jpg"},
+	{name: "connoissuer", imageName: "connoisseur.jpg"},
+	{name: "laserloop", imageName: "laserloop.jpg"},
+	{name: "mario", imageName: "mario.jpg"},
+	{name: "musketeer", imageName: "musketeer.jpg"}
+
+	]
+	
+};
+
+exports.userData = userData;

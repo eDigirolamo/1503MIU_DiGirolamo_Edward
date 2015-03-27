@@ -1,0 +1,14 @@
+var userData = {
+	
+	"users": [
+	
+	{userName:"dexter8244", firstName: "Edward", lastName: "", pasword: "", email: "", stache:"" },	
+	
+
+	
+	
+	],
+	
+};
+
+exports.userData = userData;
